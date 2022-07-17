@@ -13,7 +13,7 @@ if(have_posts()){
 
 
 }else{
-    echo "Makayn hta post";
+    _e('Sorry. no content available!','textdomain');
 }
 
 
