@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php wp_head(); ?>
+</head>
+<body>
 <?php 
 
 if(have_posts()){
@@ -18,3 +24,5 @@ if(have_posts()){
 
 
 ?>
+</body>
+</html>
