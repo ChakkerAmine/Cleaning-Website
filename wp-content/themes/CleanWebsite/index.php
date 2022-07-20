@@ -10,7 +10,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Image">
+                    <img class="img-fluid" src="<?php echo get_theme_file_uri('/img/carousel-1.jpg') ?>" alt="Image">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-primary text-uppercase mb-md-3">Cleaning Services</h5>
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Image">
+                    <img class="img-fluid" src="<?php echo get_theme_file_uri('/img/carousel-2.jpg') ?>"" alt="Image">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-primary text-uppercase mb-md-3">Cleaning Services</h5>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Image">
+                    <img class="img-fluid" src="<?php echo get_theme_file_uri('/img/carousel-3.jpg') ?>"" alt="Image">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-primary text-uppercase mb-md-3">Cleaning Services</h5>
@@ -147,21 +147,21 @@
                                 <i class="fa fa-2x fa-hotel"></i>
                             </div>
                             <h5 class="font-weight-bold mb-4 px-4">Home Cleaning</h5>
-                            <img src="img/blog-1.jpg" alt="">
+                            <img src="<?php echo get_theme_file_uri('/img/blog-1.jpg'); ?>" alt="">
                         </div>
                         <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
                             <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
                                 <i class="fa fa-2x fa-city"></i>
                             </div>
                             <h5 class="font-weight-bold mb-4 px-4">Window Cleaning</h5>
-                            <img src="img/blog-3.jpg" alt="">
+                            <img src="<?php echo get_theme_file_uri('/img/blog-3.jpg'); ?>" alt="">
                         </div>
                         <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
                             <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
                                 <i class="fa fa-2x fa-spa"></i>
                             </div>
                             <h5 class="font-weight-bold mb-4 px-4">Carpet Cleaning</h5>
-                            <img src="img/blog-2.jpg" alt="">
+                            <img src="<?php echo get_theme_file_uri('/img/blog-3.jpg'); ?>" alt="">
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="<?php echo get_theme_file_uri('/img/feature.jpg') ?>" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" alt="">
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4">Project Name</h4>
@@ -220,7 +220,7 @@
                                 <a class="btn btn-sm btn-secondary m-1" href="">
                                     <i class="fa fa-link"></i>
                                 </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" data-lightbox="portfolio">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </div>
@@ -230,7 +230,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-2.jpg') ?>" alt="">
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4">Project Name</h4>
@@ -238,7 +238,7 @@
                                 <a class="btn btn-sm btn-secondary m-1" href="">
                                     <i class="fa fa-link"></i>
                                 </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-2.jpg') ?>" data-lightbox="portfolio">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </div>
@@ -248,7 +248,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-3.jpg') ?>" alt="">
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4">Project Name</h4>
@@ -256,7 +256,7 @@
                                 <a class="btn btn-sm btn-secondary m-1" href="">
                                     <i class="fa fa-link"></i>
                                 </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" data-lightbox="portfolio">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </div>
@@ -266,7 +266,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-4.jpg') ?>" alt="">
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4">Project Name</h4>
@@ -274,7 +274,7 @@
                                 <a class="btn btn-sm btn-secondary m-1" href="">
                                     <i class="fa fa-link"></i>
                                 </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-4.jpg') ?>" data-lightbox="portfolio">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </div>
@@ -284,7 +284,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-5.jpg') ?>" alt="">
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4">Project Name</h4>
@@ -292,7 +292,7 @@
                                 <a class="btn btn-sm btn-secondary m-1" href="">
                                     <i class="fa fa-link"></i>
                                 </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-5.jpg') ?>" data-lightbox="portfolio">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </div>
@@ -302,7 +302,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-6.jpg') ?>" alt="">
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4">Project Name</h4>
@@ -310,7 +310,7 @@
                                 <a class="btn btn-sm btn-secondary m-1" href="">
                                     <i class="fa fa-link"></i>
                                 </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-6.jpg') ?>" data-lightbox="portfolio">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </div>
@@ -342,7 +342,7 @@
                         <div class="team d-flex flex-column text-center rounded overflow-hidden">
                             <div class="position-relative">
                                 <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                                    <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/team-1.jpg') ?>" alt="">
                                 </div>
                                 <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
                                     <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -358,7 +358,7 @@
                         <div class="team d-flex flex-column text-center rounded overflow-hidden">
                             <div class="position-relative">
                                 <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                                    <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/team-2.jpg') ?>" alt="">
                                 </div>
                                 <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
                                     <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -374,7 +374,7 @@
                         <div class="team d-flex flex-column text-center rounded overflow-hidden">
                             <div class="position-relative">
                                 <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                                    <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/team-3.jpg') ?>" alt="">
                                 </div>
                                 <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
                                     <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -390,7 +390,7 @@
                         <div class="team d-flex flex-column text-center rounded overflow-hidden">
                             <div class="position-relative">
                                 <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                                    <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/team-4.jpg') ?>" alt="">
                                 </div>
                                 <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
                                     <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -421,7 +421,7 @@
                     <div class="owl-carousel testimonial-carousel position-relative">
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <img class="img-fluid" src="<?php echo get_theme_file_uri('/img/testimonial-1.jpg') ?>" alt="">
                                 <div class="ml-3">
                                     <h5 class="text-primary">Client Name</h5>
                                     <i>Profession</i>
@@ -431,7 +431,7 @@
                         </div>
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                <img class="img-fluid" src="<?php echo get_theme_file_uri('/img/testimonial-2.jpg') ?>" alt="">
                                 <div class="ml-3">
                                     <h5 class="text-primary">Client Name</h5>
                                     <i>Profession</i>
@@ -441,7 +441,7 @@
                         </div>
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                <img class="img-fluid" src="<?php echo get_theme_file_uri('/img/testimonial-3.jpg') ?>" alt="">
                                 <div class="ml-3">
                                     <h5 class="text-primary">Client Name</h5>
                                     <i>Profession</i>
@@ -453,7 +453,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="<?php echo get_theme_file_uri('/img/testimonial.jpg') ?>" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -477,7 +477,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="<?php echo get_theme_file_uri('/img/blog-1.jpg') ?>" alt="">
                         <div class="blog-date">
                             <h4 class="font-weight-bold mb-n1">01</h4>
                             <small class="text-white text-uppercase">Jan</small>
@@ -494,7 +494,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="<?php echo get_theme_file_uri('/img/blog-2.jpg') ?>" alt="">
                         <div class="blog-date">
                             <h4 class="font-weight-bold mb-n1">01</h4>
                             <small class="text-white text-uppercase">Jan</small>
@@ -511,7 +511,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="<?php echo get_theme_file_uri('/img/blog-3.jpg') ?>" alt="">
                         <div class="blog-date">
                             <h4 class="font-weight-bold mb-n1">01</h4>
                             <small class="text-white text-uppercase">Jan</small>
@@ -531,102 +531,4 @@
     </div>
     <!-- Blog End -->
 
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 mt-n3 display-4 text-primary">Klean</h1>
-                </a>
-                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                <h5 class="font-weight-semi-bold text-white mb-2">Opening Hours:</h5>
-                <p class="mb-1">Mon – Sat, 8AM – 5PM</p>
-                <p class="mb-0">Sunday: Closed</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt text-primary mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope text-primary mr-2"></i>info@example.com</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">Quick Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">Newsletter</h4>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum.</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-0" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Your Site Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+    <?php get_footer(); ?>

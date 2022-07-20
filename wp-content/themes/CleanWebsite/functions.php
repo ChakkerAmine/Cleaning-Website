@@ -3,6 +3,20 @@
 // Adding Theme FIles
 
 function theme_files(){
+    // js files 
+    wp_enqueue_script('jquery','//code.jquery.com/jquery-3.4.1.min.js',array(),'1.0',true);
+    wp_enqueue_script('Bootstrap','/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js',array(),'1.0',true);
+    wp_enqueue_script('easing',get_theme_file_uri('/lib/easing/easing.min.js'),array(),'1.0',true);
+    wp_enqueue_script('waypoints',get_theme_file_uri('/lib/waypoints/waypoints.min.js'),array(),'1.0',true);
+    wp_enqueue_script('counterup',get_theme_file_uri('/lib/counterup/counterup.min.js'),array(),'1.0',true);
+    wp_enqueue_script('carousel',get_theme_file_uri('/lib/owlcarousel/owl.carousel.min.js'),array(),'1.0',true);
+    wp_enqueue_script('isotope',get_theme_file_uri('/lib/isotope/isotope.pkgd.min.js'),array(),'1.0',true);
+    wp_enqueue_script('easlightboxing',get_theme_file_uri('/lib/lightbox/js/lightbox.min.js'),array(),'1.0',true);
+    wp_enqueue_script('validation',get_theme_file_uri('/mail/jqBootstrapValidation.min.js'),array(),'1.0',true);
+    wp_enqueue_script('contact',get_theme_file_uri('/mail/contact.js'),array(),'1.0',true);
+    wp_enqueue_script('main js',get_theme_file_uri('/js/main.js'),array(),'1.0',true);
+    
+    // css and link files 
     wp_enqueue_style('theme style',get_stylesheet_uri());
     wp_enqueue_style('gstatic','//fonts.gstatic.com');
     wp_enqueue_style('poppins font','//fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
