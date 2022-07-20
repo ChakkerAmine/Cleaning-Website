@@ -30,4 +30,22 @@ function theme_files(){
 
 
 add_action('wp_enqueue_scripts','theme_files');
+
+
+
+
+
+// after setup theme
+
+function clean_features(){
+    // for the title 
+    add_theme_support('title-tag');
+    // for the menu suppot
+    register_nav_menus( array(
+        'primary_menu' => __( 'Primary Menu', 'text_domain' )
+    ) );
+}
+
+add_action('after_setup_theme','clean_features');
+
 ?>

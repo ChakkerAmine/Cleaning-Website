@@ -54,20 +54,41 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Service</a>
-                            <a href="project.html" class="nav-item nav-link">Project</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Latest Blog</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
+                        <!-- <ul class="navbar-nav mr-auto py-0">
+                            
+                            <li>
+                                <a href="service.html" class="nav-item nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="service.html" class="nav-item nav-link">About</a>
+                            </li>
+                            <li>
+                                <a href="service.html" class="nav-item nav-link">Service</a>
+                            </li>
+                        </ul> -->
+                        <style>
+                            .navbar-nav{
+                                padding:30px 15px!important;
+                            }
+                            .navbar-nav li a{
+                                padding: 30px 15px!important;
+                                color: #0a1026;
+                                font-size: 17px;
+                                font-weight: 600;
+                                outline: none;
+                                text-decoration:none;
+                            }
+                            .navbar-nav li a:hover{
+                                color: #23A036;
+                            }
+                            
+                        </style>
+                        <?php 
+                            wp_nav_menu(array(
+                                'menu_class'        => "navbar-nav mr-auto py-0",
+                                'theme_location' => 'primary_menu'
+                            ));
+                        ?>
                         <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Get A Quote</a>
                     </div>
                 </nav>
