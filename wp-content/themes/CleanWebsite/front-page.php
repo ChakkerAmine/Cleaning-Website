@@ -471,64 +471,44 @@
                     <h1 class="section-title mb-3">Latest Articles From Our Blog Post</h1>
                 </div>
                 <div class="col-lg-6">
-                    <h4 class="font-weight-normal text-muted mb-3">Eirmod kasd duo eos et magna, diam dolore stet sea clita sit ea erat lorem. Ipsum eos ipsum magna lorem stet</h4>
+                    <h4 class="font-weight-normal text-muted mb-3">Eirmod kasd duo eos et magna, diam dolore stet sea clita sit ea erat lorem. <a href="<?php echo get_post_type_archive_link( 'post' ); ?>">Show all Posts in our blog in</a></p></h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="<?php echo get_theme_file_uri('/img/blog-1.jpg') ?>" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
-                        <span class="text-primary px-2">|</span>
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Cleaning</a>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Rebum lorem eos ipsum diam</h5>
-                    <p class="mb-4">Dolor justo sea kasd lorem clita justo no diam amet. Kasd magna dolor amet</p>
-                    <a class="btn btn-sm btn-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="<?php echo get_theme_file_uri('/img/blog-2.jpg') ?>" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
-                        <span class="text-primary px-2">|</span>
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Cleaning</a>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Rebum lorem eos ipsum diam</h5>
-                    <p class="mb-4">Dolor justo sea kasd lorem clita justo no diam amet. Kasd magna dolor amet</p>
-                    <a class="btn btn-sm btn-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="<?php echo get_theme_file_uri('/img/blog-3.jpg') ?>" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
-                        <span class="text-primary px-2">|</span>
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Cleaning</a>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Rebum lorem eos ipsum diam</h5>
-                    <p class="mb-4">Dolor justo sea kasd lorem clita justo no diam amet. Kasd magna dolor amet</p>
-                    <a class="btn btn-sm btn-primary py-2" href="">Read More</a>
-                </div>
+                <?php 
+                $homepagePosts = new WP_Query(array(
+                    'posts_per_page' => 3,
+
+                ));
+                    while($homepagePosts->have_posts()){
+                        $homepagePosts->the_post();
+                        ?>
+                            <div class="col-lg-4 col-md-6 mb-5">
+                                <div class="position-relative mb-4">
+                                    <img class="img-fluid rounded w-100" src="<?php echo get_theme_file_uri('/img/blog-1.jpg') ?>" alt="">
+                                    <div class="blog-date">
+                                        <h4 class="font-weight-bold mb-n1"><?php the_time('j') ?></h4>
+                                        <small class="text-white text-uppercase"><?php the_time('F') ?></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <a class="text-secondary text-uppercase font-weight-medium" href=""><?php  the_author_posts_link();  ?></a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-secondary text-uppercase font-weight-medium" href=""><?php echo get_the_category_list(' | ') ?></a>
+                                </div>
+                                <h5 class="font-weight-medium mb-2"><?php the_title(); ?></h5>
+                                <p class="mb-4"><?php echo wp_trim_words(get_the_content(),18); ?></p>
+                                <a class="btn btn-sm btn-primary py-2" href="<?php echo get_permalink(); ?>">Read More</a>
+                            </div>
+                        <?php 
+                    } wp_reset_postdata(); 
+                ?>
+                
+                
             </div>
         </div>
     </div>
     <!-- Blog End -->
 
     <?php get_footer(); ?>
+  
