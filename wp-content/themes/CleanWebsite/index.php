@@ -51,7 +51,7 @@
                                     <a class="text-secondary text-uppercase font-weight-medium" href=""><?php echo get_the_category_list(' | ') ?></a>
                                 </div>
                                 <h5 class="font-weight-medium mb-2"><?php the_title(); ?></h5>
-                                <p class="mb-4"><?php the_excerpt(); ?></p>
+                                <p class="mb-4"><?php echo wp_trim_words(get_the_content(),18); ?></p>
                                 <a class="btn btn-sm btn-primary py-2" href="<?php echo get_permalink(); ?>">Read More</a>
                             </div>
                         <?php 
