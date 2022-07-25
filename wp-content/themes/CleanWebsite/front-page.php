@@ -208,6 +208,9 @@
     <!-- Portfolio Start -->
     <div class="container-fluid bg-portfolio py-5">
         <div class="container py-5">
+            <h4 class="pb-4">
+                <a href="<?php echo get_post_type_archive_link( 'project' ); ?>">See All Projects</a>
+            </h4>
             <div class="row m-0 portfolio-container">
                 
                 <?php 
