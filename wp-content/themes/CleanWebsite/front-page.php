@@ -209,114 +209,40 @@
     <div class="container-fluid bg-portfolio py-5">
         <div class="container py-5">
             <div class="row m-0 portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+                
+                <?php 
+                    $homepageProjects = new WP_Query(array(
+                        'posts_per_page' => 6,
+                        'post_type' => 'project'
+                    ));
+                    while($homepageProjects->have_posts()){
+                        $homepageProjects->the_post();
+                        ?>
+                            <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                                <div class="position-relative overflow-hidden">
+                                    <div class="portfolio-img">
+                                        <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" alt="">
+                                    </div>
+                                    <div class="portfolio-text bg-primary">
+                                        <h4 class="font-weight-bold mb-4">
+                                            <?php the_title(); ?>
+                                        </h4>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_permalink(); ?>">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                            <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" data-lightbox="portfolio">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-2.jpg') ?>" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-2.jpg') ?>" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-3.jpg') ?>" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-4.jpg') ?>" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-4.jpg') ?>" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-5.jpg') ?>" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-5.jpg') ?>" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-6.jpg') ?>" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-6.jpg') ?>" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <?php 
+                    }
+                ?>
+                
+                
             </div>
         </div>
         </div>
