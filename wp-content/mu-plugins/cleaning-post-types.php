@@ -1,8 +1,9 @@
 <?php 
 
 function cleaning_post_types(){
-    $args = array(
+    $args   = array(
         'public' => true,
+        'has_archive' => true,
         'labels'=> array(
             'name' => 'Projects',
             'singular_name' => 'Project',
