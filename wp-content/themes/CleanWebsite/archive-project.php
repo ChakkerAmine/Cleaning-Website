@@ -53,9 +53,57 @@
             <div class="col-lg-12 pt-12 pb-lg-12">
                 <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Learn About Us</h6>
                 <h1 class="mb-4 section-title"><?php if(is_page('about')){echo "We Provide The Best Cleaning Services";}else{the_author();} ?></h1>
-                <p><?php the_archive_description(); ?></p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum repellendus labore dolores fugit ratione quam, dignissimos nihil, ab neque sint officia facere voluptates corporis autem. Sit at facere rem impedit?</p>
-                
+                <p><?php the_archive_description(); ?></p>                
+            </div>
+            <!-- Displaying all Project -->
+            <div class="row">
+                <?php
+                    while(have_posts()){
+                        the_post();?>
+                            <div class="col-lg-4 col-md-6 mb-5">
+                                <div class="position-relative mb-4">
+                                    <img class="img-fluid rounded w-100" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                                    <div class="blog-date">
+                                        <h4 class="font-weight-bold mb-n1"><?php the_time('j') ?></h4>
+                                        <small class="text-white text-uppercase"><?php the_time('F') ?></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <a class="text-secondary text-uppercase font-weight-medium" href=""><?php  the_author_posts_link();  ?></a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-secondary text-uppercase font-weight-medium" href=""><?php echo get_the_category_list(' | ') ?></a>
+                                </div>
+                                <h5 class="font-weight-medium mb-2"><?php the_title(); ?></h5>
+                                <p class="mb-4"><?php echo wp_trim_words(get_the_content(),20); ?></p>
+                                <a class="btn btn-sm btn-primary py-2" href="<?php echo get_permalink(); ?>">Read More</a>
+                            </div>
+                        <?php 
+                    }
+
+                ?>
+
+                <div class="col-12">
+                    <nav aria-label="Page navigation">
+                        <?php echo paginate_links(); ?>
+                      <!-- <ul class="pagination pagination-lg justify-content-center mb-0">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </li>
+                      </ul> -->
+                    </nav>
+                </div>
             </div>
             
         </div>
