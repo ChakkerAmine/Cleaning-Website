@@ -40,6 +40,8 @@ add_action('wp_enqueue_scripts','theme_files');
 function clean_features(){
     // for the title 
     add_theme_support('title-tag');
+    // for the featured image 
+    add_theme_support( 'post-thumbnails' );
     // for the menu suppot
     register_nav_menus( array(
         'primary_menu' => __( 'Primary Menu', 'text_domain' )
