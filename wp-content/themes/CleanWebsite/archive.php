@@ -42,7 +42,7 @@
     <!-- About Start -->
     <div class="container-fluid py-5 mb-5">
         <div class="container">
-            <div class="row">
+            <div class="row">   
                 <!-- <div class="col-lg-5">
                     <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3">
                         <i class="fa fa-5x fa-award text-primary mb-4"></i>
@@ -54,8 +54,10 @@
                     <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Learn About Us</h6>
                     <h1 class="mb-4 section-title"><?php if(is_page('about')){echo "We Provide The Best Cleaning Services";}else{the_author();} ?></h1>
                     <p><?php the_archive_description(); ?></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum repellendus labore dolores fugit ratione quam, dignissimos nihil, ab neque sint officia facere voluptates corporis autem. Sit at facere rem impedit?</p>
                     
                 </div>
+                
             </div>
         </div>
     </div>
