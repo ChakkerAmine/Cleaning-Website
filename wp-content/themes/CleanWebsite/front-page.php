@@ -224,7 +224,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                                 <div class="position-relative overflow-hidden">
                                     <div class="portfolio-img">
-                                        <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                                     </div>
                                     <div class="portfolio-text bg-primary">
                                         <h4 class="font-weight-bold mb-4">
@@ -233,9 +233,6 @@
                                         <div class="d-flex align-items-center justify-content-center">
                                             <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_permalink(); ?>">
                                                 <i class="fa fa-link"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_theme_file_uri('/img/portfolio-1.jpg') ?>" data-lightbox="portfolio">
-                                                <i class="fa fa-eye"></i>
                                             </a>
                                         </div>
                                     </div>
