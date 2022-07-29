@@ -2,6 +2,7 @@
 
 function cleaning_post_types(){
     $args   = array(
+        'supports' => array('title','editor','thumbnail'),
         'public' => true,
         'has_archive' => true,
         'labels'=> array(
