@@ -252,33 +252,8 @@
     <!-- Portfolio End -->
 
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-end mb-4">
-                <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Meet Our Team</h6>
-                    <h1 class="section-title mb-3">Meet Our Highly Experienced Cleaners</h1>
-                </div>
-                <div class="col-lg-6">
-                    <h4 class="font-weight-normal text-muted mb-3">
-
-                    <?php 
-                        
-                        
-                    ?>
-                    </h4>
-                </div>
-            </div>
-           
-            <?php 
-                // echo get_template_part('templates/tmp_team.php');
-                include('templates/tmp_team.php');
-            ?>
-        </div>
-    </div>
-    <!-- Team End -->
-
+    <!-- teams -->
+    <?php get_template_part( 'templates-parts/tmp_team' ); ?>
 
     <!-- Testimonial Start -->
     <div class="container-fluid bg-testimonial py-5">
