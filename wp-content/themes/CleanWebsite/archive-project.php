@@ -1,4 +1,4 @@
-<?php echo "Hello this is archive post" ?><?php get_header(); ?>
+<?php get_header(); ?>
 
 <!-- Page Header Start -->
 <div class="container-fluid bg-primary py-5 mb-5">
