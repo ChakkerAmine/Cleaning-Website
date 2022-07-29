@@ -261,45 +261,20 @@
                     <h1 class="section-title mb-3">Meet Our Highly Experienced Cleaners</h1>
                 </div>
                 <div class="col-lg-6">
-                    <h4 class="font-weight-normal text-muted mb-3">Eirmod kasd duo eos et magna, diam dolore stet sea clita sit ea erat lorem. Ipsum eos ipsum magna lorem stet</h4>
+                    <h4 class="font-weight-normal text-muted mb-3">
+
+                    <?php 
+                        
+                        
+                    ?>
+                    </h4>
                 </div>
             </div>
            
-            <div class="row">
-                <div class="col-12">
-                    <div class="owl-carousel team-carousel position-relative">
-                        <?php 
-                            $homepageTeams = new WP_Query(array(
-                                'posts_per_page' => 6,
-                                'post_type' => 'team'
-                            ));
-                            while($homepageTeams->have_posts()){
-                                $homepageTeams->the_post();
-                                ?>
-                                <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                                    <div class="position-relative">
-                                        <div class="team-img">
-                                            <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('/img/team-1.jpg') ?>" alt="">
-                                        </div>
-                                        <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                            <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column bg-primary text-center py-4">
-                                        <h5 class="font-weight-bold"><?php the_title(); ?></h5>
-                                        <p class="text-white m-0">Designation</p>
-                                    </div>
-                                </div>
-                                <?php 
-                            }
-                            wp_reset_postdata(); 
-
-                        ?>
-                    </div>
-                </div>
-            </div>
+            <?php 
+                // echo get_template_part('templates/tmp_team.php');
+                include('templates/tmp_team.php');
+            ?>
         </div>
     </div>
     <!-- Team End -->
